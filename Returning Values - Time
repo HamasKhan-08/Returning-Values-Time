@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+string greetings (int time){
+    if(time < 12){
+        return " Good Morning";
+    }else{
+        return " Good Afternoon";
+    }
+}
+int main()
+{
+    cout << " What Time Is It ?" << endl;
+    int UserInput;
+    cin >> UserInput;
+    cout << greetings(UserInput) << endl;
+    return 0;
+}
